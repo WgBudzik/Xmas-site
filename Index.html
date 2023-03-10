@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strona świąteczna</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+    <meta name="description" content="Świąteczna strona">
+    <meta name="keywords" content="Strona świąteczna, święta HTNL, CSS, JavaScript">
+    <meta name="author" content="Jakub Budziński">
+</head>
+<body onload="cookies()">
+  <div id="cookies-parent">
+    <div id="cookies-child">
+      Ta strona używa plików cookies <br>
+      <center><button id="accept">Rozumiem</button></center>
+    </div>
+  </div>
+    <header>
+        <p id="countdown" ></p>
+            <button id="darkMode" >Tryb Ciemny</button>
+            <button id="changeBg" >Zmień obraz w tle</button>
+    </header>
+    <main>
+      <img src="img/parcel.png" alt="parcel 1" class="parcel">
+      <img src="img/parcel.png" alt="parcel 2" class="parcel">
+      <img src="img/parcel.png" alt="parcel 3" class="parcel">
+      <img src="img/parcel.png" alt="parcel 4" class="parcel">
+      <img src="img/parcel.png" alt="parcel 5" class="parcel">
+      <img src="img/parcel.png" alt="parcel 6" class="parcel">
+  </main>
+    <nav>
+      <form>
+         <h2 id="newsletter">Zapisz się na światecznego newsletter'a</h2>
+        <br> <p id="name">Imię:</p> <input type="text" id="nameInp">
+        <p id="surname">Nazwisko:</p> <input type="text" id="surnameInp">
+        <p id="email">Email:</p> <input type="email" id="emailInp">
+        <p id="password">Hasło:</p> <input type="password" id="passwordInp"> <br>
+       <input type="reset" value="Wyslij" id="submit-btn">
+      </form>
+    </nav>
+    <aside>
+      <p id="author">Strona wykonana przez Jakuba Budzińskiego</p>
+    </aside>
+    <footer>
+        <a href="#countdown" id="goUp">Powrót na górę</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+* {
+  font-size: 30px;
+  font-family: "Mountains of Christmas", cursive;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(img/bg1.jpg) repeat scroll;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+#cookies-parent {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 400px;
+}
+
+#cookies-child {
+  border: 5px solid green;
+  border-radius: 25px;
+  background: white;
+  opacity: 0.7;
+}
+
+#accept {
+  background: lightgreen;
+  border-radius: 25px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 5px dashed red;
+  color: white;
+}
+
+#darkMode {
+  order: 2;
+}
+
+#changeBg {
+  order: 1  ;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+
+nav {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+aside {
+  float: left;
+}
+
+#author {
+  color: white;
+}
+footer {
+  float: right;
+}
+
+input {
+  border-radius: 25px;
+  background: lightgrey;
+}
+
+@media (min-width: 1025px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
+@media (min-width: 1400px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
